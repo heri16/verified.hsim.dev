@@ -18,7 +18,7 @@ pubkey: "<your nostr hex-encoded pubkey>"
 ```
 
 
-## Nostr Identities [(NIP-05)](https://metadata.nostr.com/)
+## Nostr Identities ([NIP-05](https://nostr.how/en/guides/get-verified#self-hosted))
 
 Verified IDs in [.well-known/nostr.json]({{ site.github.url }}/.well-known/nostr.json):
 
