@@ -1,5 +1,5 @@
 ---
-title: {{ site.github.repository_name }}
+title: "verified.hsim.dev"
 ---
 # A free and anonymous NIP-05 ID registration service
 
