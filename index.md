@@ -7,7 +7,10 @@ title: "verified.hsim.dev"
 
 Contents of `.well-known/nostr.json`:
 
-```json
+{% assign names = site.data.nostr.names %}
 
-```
+{% for name_key, name_value in names %}
+1. **{{ name_key }}**: `{{ name_value }}`
+{% endfor %}
+
 
