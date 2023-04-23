@@ -4,7 +4,7 @@ title: "verified.hsim.dev"
 # A free and anonymous NIP-05 ID registration service
 
 How to add / register:
-1. Click [this link]({{ site.github.repository_url }}/new/main/_nip05) to create a new file in the [./_nip05](_nip05) folder.
+1. Click [this link]({{ site.github.repository_url }}/new/main/_nip05) to create a new file in the [_nip05](_nip05) folder.
 1. Input the file-name in this format: `<your chosen name>.md`.
 1. Copy and Edit the template below into the file content.
 1. Make a new Github Pull Request (PR) - commit the new file into your own fork.
@@ -20,7 +20,7 @@ pubkey: "<your hex encoded pubkey>"
 
 ## Nostr Identities [(NIP-05)](https://metadata.nostr.com/)
 
-Verified IDs in `.well-known/nostr.json`:
+Verified IDs in [.well-known/nostr.json]({{ site.github.url }}/.well-known/nostr.json):
 
 {%- assign nip05 = site.nip05 | where_exp: "doc", "doc.pubkey != nil" -%}
 
