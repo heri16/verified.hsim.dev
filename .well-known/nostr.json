@@ -5,7 +5,7 @@
 {
   "names": {
     {%- for doc in nip05 %}
-      {{ doc.url.name | jsonify }}: {{ doc.pubkey | jsonify }}
+      {{ doc.url | jsonify }}: {{ doc.pubkey | jsonify }}
       {%- unless forloop.last %},{% endunless -%}
     {% endfor %}
   }
