@@ -1,10 +1,5 @@
 include:
   - ".well-known"
 
-plugins:
-  - jekyll_get_json
-
-get_json:
-  data:
-    nostr:
-      src: ".well-known/nostr.json"
+collections:
+  - nip05
