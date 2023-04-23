@@ -5,6 +5,6 @@
 Contents of `.well-known/nostr.json`:
 
 ```json
-{% include .well-known/nostr.json %}
+{% include ./.well-known/nostr.json %}
 ```
 
