@@ -1,4 +1,7 @@
-# Verified Identities
+---
+title: "verified.hsim.dev"
+---
+# Verified Identities List
 
 ## Nostr [(nip05)](https://metadata.nostr.com/)
 
