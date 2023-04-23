@@ -1,5 +1,5 @@
 ---
-title: "verified.hsim.dev"
+title: "{{ site.title }}"
 ---
 # A free and anonymous NIP-05 ID registration service
 
