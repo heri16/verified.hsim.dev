@@ -30,5 +30,6 @@ Verified IDs in [.well-known/nostr.json]({{ site.github.url }}/.well-known/nostr
 
 
 ## Built with
-- **Google Domains** - DNSSEC is enabled
+- **.DEV TLD** - Preloaded HTTPS Strict Transport Security
+- **Google Domains** - [DNSSEC is enabled](https://dnsviz.net/d/{{ site.github.url | split: "://" | last }}/dnssec/)
 - **Github Pages** - Enforce HTTPS
