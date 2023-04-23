@@ -4,4 +4,4 @@ include:
 collections:
   nip05:
     output: false
-    permalink: :name
+    permalink: /:name
