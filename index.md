@@ -7,10 +7,12 @@ title: "verified.hsim.dev"
 
 Contents of `.well-known/nostr.json`:
 
-{% assign names = site.data.nostr.names %}
+{% for repository in site.github.public_repositories %}
+  * [{{ repository.name }}]({{ repository.html_url }})
+{% endfor %}
 
 <ol>
-{% for name in names %}
+{% for name in site.data.nostr.names %}
   <li><strong>{{ name[0] }}</strong>: <code>{{ name[1] }}</code></li>
 {% endfor %}
 </ol>
