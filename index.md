@@ -33,4 +33,4 @@ Verified IDs in [.well-known/nostr.json]({{ site.github.url }}/.well-known/nostr
 ## Built with
 - **.DEV TLD** - [Preloaded HTTPS Strict Transport Security](https://hstspreload.org/?domain={{ site_url_host }})
 - **Google Domains** - [DNSSEC is enabled](https://dnsviz.net/d/{{ site_url_host }}/dnssec/)
-- **Github Pages** - Enforce HTTPS
+- **Github Pages** - [Enforce HTTPS](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)
