@@ -1,3 +1,5 @@
+---
+---
 {%- assign nip05 = site.nip05 | where_exp: "doc", "doc.pubkey != nil" -%}
 
 {
