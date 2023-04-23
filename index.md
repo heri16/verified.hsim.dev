@@ -22,14 +22,15 @@ pubkey: "<your nostr hex-encoded pubkey>"
 
 Verified IDs in [.well-known/nostr.json]({{ site.github.url }}/.well-known/nostr.json):
 
+{%- assign site_url_host = site.github.url | split: "://" | last | split: "/" | first -%}
 {%- assign nip05 = site.nip05 | where_exp: "doc", "doc.pubkey != nil" -%}
 
 {% for doc in nip05 %}
-  * [{{ doc.url | split: "/" | last | strip_html }}@{{ site.github.url | split: "://" | last }}](https://snort.social/p/{{ doc.pubkey | strip_html | url_encode }})
+  * [{{ doc.url | split: "/" | last | strip_html }}@{{ site_url_host }}](https://snort.social/p/{{ doc.pubkey | strip_html | url_encode }})
 {% endfor %}
 
 
 ## Built with
-- **.DEV TLD** - Preloaded HTTPS Strict Transport Security
-- **Google Domains** - [DNSSEC is enabled](https://dnsviz.net/d/{{ site.github.url | split: "://" | last }}/dnssec/)
+- **.DEV TLD** - [Preloaded HTTPS Strict Transport Security](https://hstspreload.org/?domain={{ site_url_host }})
+- **Google Domains** - [DNSSEC is enabled](https://dnsviz.net/d/{{ site_url_host }}/dnssec/)
 - **Github Pages** - Enforce HTTPS
