@@ -9,8 +9,9 @@ Contents of `.well-known/nostr.json`:
 
 {% assign names = site.data.nostr.names %}
 
-{% for name_key, name_value in names %}
-1. **{{ name_key }}**: `{{ name_value }}`
+{% for name in names %}
+1. **{{ name[0] }}**: `{{ name[1] }}`
 {% endfor %}
+
 
 
