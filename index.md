@@ -1,5 +1,5 @@
 ---
-title: "{{ site.title }}"
+title: "{{ site.github.project_title }}"
 ---
 # A free and anonymous NIP-05 ID registration service
 
